@@ -8,13 +8,17 @@
 }
 
 .header {
+    font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--color-grey-light-2);
+    display: flex;
+    justify-content: space-between; //MOVE THE ELEMENT INSIDE HEADER ONE LEFT ONE RIGHT ONE CENTER
+    align-items: center;
 }
 
 .content {
-    display: flex;      //START FLEX BOX BY GIVING "FLEX" TO PARENT-CONTAINER THIS IS A FLEX CONTAINER
+    display: flex;  //START FLEX BOX BY GIVING "FLEX" TO PARENT-CONTAINER THIS IS A FLEX CONTAINER
 }
 
 .sidebar {
