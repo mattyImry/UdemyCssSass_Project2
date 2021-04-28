@@ -192,3 +192,58 @@
     text-align: center;
     padding: 2.5rem;
 }
+
+
+///GALLERY/////////
+
+.gallery {
+
+    display: flex;
+
+    &__photo {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+
+///HOTEL OVERVIEW/////////
+
+.overview {
+
+    display: flex;
+    
+    &__heading {
+
+    }
+
+    &__stars {
+        margin-right: auto;            // to create space to aLLOW ONE LEMENT TO ONLY USE ITS SPACE USE MARGIN-.. AUTO IN FLEX
+    }
+
+    &__icon-star,
+    &__icon-location {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+    }
+
+    &__location {
+
+        
+
+    }
+
+    &__rating {
+
+    }
+
+    &__rating-average {
+
+    }
+
+    &__rating-count{
+        
+    }
+}
