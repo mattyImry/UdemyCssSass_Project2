@@ -1,6 +1,6 @@
 .container {
     max-width: 120rem;
-    margin: 8rem auto; //CENTER THE CONMTAINER TO CENTER TO ITS PARENT ELEMENT (auto)
+    margin: 8rem auto;              //CENTER THE CONMTAINER TO CENTER TO ITS PARENT ELEMENT (auto)
     background-color: var(--color-grey-light-1);
     box-shadow: var(--shadow-dark);
 
@@ -18,7 +18,7 @@
 }
 
 .content {
-    display: flex;  //START FLEX BOX BY GIVING "FLEX" TO PARENT-CONTAINER THIS IS A FLEX CONTAINER
+    display: flex;                  //START FLEX BOX BY GIVING "FLEX" TO PARENT-CONTAINER THIS IS A FLEX CONTAINER
 }
 
 .sidebar {
@@ -26,11 +26,18 @@
 
     flex: 0 0 18%;
 
+    display: flex;                  // CHANGING DIRECTION FOR SIDE BAR TOP TO DOWN
+    flex-direction: column;
+    justify-content: space-between; // pushing legal writing to bottom and icons at top
+
 }
 
 .hotel-view {
     background-color: #fff;
+
+
     background-color: orangered;
+    height: 80rem;
 
     flex: 1;
 }
