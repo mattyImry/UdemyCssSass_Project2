@@ -80,7 +80,7 @@ body {
   background-color: #fff;
   flex: 1; }
 
-.details {
+.detail {
   font-size: 1.4rem;
   display: flex;
   padding: 4.5rem;
@@ -314,7 +314,7 @@ body {
   flex-wrap: wrap; }
   .list__item {
     flex: 0 0 50%;
-    margin: .7rem; }
+    margin-bottom: .7rem; }
   .list__item::before {
     content: "";
     display: inline-block;
