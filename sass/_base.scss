@@ -32,6 +32,8 @@ Grey dark 3: #999
     --line: 1px solid var(--color-grey-light-2);   //A VAIABLE CAN CONTAIN A VARIABLE
 }
 
+$bp-largest: 75em;    //1200px/16px = 75em media query goes in em
+
 
 // UNIVERSAL SELECTORS
 * {
