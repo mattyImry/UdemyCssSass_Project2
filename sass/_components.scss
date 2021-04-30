@@ -128,13 +128,27 @@
     list-style: none;
     margin-top: 3.5rem;
 
-
+    @media only screen and (max-width: $bp-medium){
+        display: flex;
+        margin: 0;
+    }
+    
     &__item {
         position: relative;       //PARENT NEED POSITIONING TO OVERLAP FOR HOVERING FX
 
         &:not(:last-child) {
             margin-bottom: .5rem;
+
+            @media only screen and (max-width: $bp-medium){
+                
+                margin: 0;
+            }
         }
+
+        @media only screen and (max-width: $bp-medium){
+            flex: 1;                // allow elements to fit entire space in container
+    }
+        
     }
 
     &__item::before {            //COLOR EFFECT WHEN HOVERING OVER SIE BAR ELEMENTS CONTENT MUST BE PRESENT OR WON'T WORK
@@ -173,6 +187,11 @@
         z-index: 10;            // zindex only works with a position established
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            justify-content: center;
+            padding: 2rem;
+        }
     }
 
     &__icon {
@@ -191,6 +210,10 @@
     color: var(--color-grey-light-4);
     text-align: center;
     padding: 2.5rem;
+
+    @media only screen and (max-width: $bp-medium){
+        display: none; 
+    }
 }
 
 
@@ -381,7 +404,7 @@
     }
 
     &__friends {
-
+        display: flex;
     }
 
     &__photo {
@@ -392,7 +415,7 @@
         border: 3px solid #fff;
 
         &:not(:last-child) {
-            margin-right: -1.5rem;
+            margin-right: -2rem;
         }
     }
 }
@@ -407,6 +430,11 @@
     margin-bottom: 3.5rem;
     position: relative;
     overflow: hidden;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 3rem;
+        padding: 2rem;
+    }
 
     &__text {
         margin-bottom: 2rem;
@@ -466,6 +494,11 @@
 .cta {
     padding: 3.5rem 0;
     text-align: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        
+        padding: 2.5rem 0;
+    }
 
     &__book-now{
         font-size: 2rem;

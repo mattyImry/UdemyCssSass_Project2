@@ -32,7 +32,10 @@ Grey dark 3: #999
     --line: 1px solid var(--color-grey-light-2);   //A VAIABLE CAN CONTAIN A VARIABLE
 }
 
-$bp-largest: 75em;    //1200px/16px = 75em media query goes in em
+$bp-largest: 75em;          //1200px/16px = 75em media query goes in em
+$bp-large: 68.75em;        //1100px/16px 
+$bp-medium: 56.25em;         //900px/16px
+
 
 
 // UNIVERSAL SELECTORS
@@ -52,7 +55,12 @@ $bp-largest: 75em;    //1200px/16px = 75em media query goes in em
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; //1 REM = 10PX , 10PX/16PX = 62.5%
+    font-size: 62.5%; //1 REM = 10PX , 10PX/16PX = 62.5% SO WHEN GOING FOR THE MOBILE VIEW YOU REDUCE THE FONT SIZE AND EVERYTHIGN FITS AGAIN
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+
 }
 
 body {
